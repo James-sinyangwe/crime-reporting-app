@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         username =(EditText) findViewById(R.id.user_name);
         password =(EditText) findViewById(R.id.password);
+        login_button =(Button) findViewById(R.id.login_button);
         sign_up_button=(Button) findViewById(R.id.sign_up_button);
         sign_up_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               final String usernameTxt =username.getText().toString();
+               final String phonenumberTxt =username.getText().toString();
                final String passwordTXt =password.getText().toString();
 
-               if  (usernameTxt.isEmpty() || passwordTXt.isEmpty()){
+               if  (phonenumberTxt.isEmpty() || passwordTXt.isEmpty()){
                    Toast.makeText(MainActivity.this,"Username or Password is Empty",Toast.LENGTH_SHORT).show();
 
                }
@@ -50,12 +51,12 @@ public class MainActivity extends AppCompatActivity {
                               @Override
                               public void onDataChange(@NonNull DataSnapshot snapshot) {
                                   // here will check if the user's phone number is in the database
-                                  if(snapshot.hasChild(usernameTxt)){
+                                  if(snapshot.hasChild(phonenumberTxt)){
 
                                       //if the number is in the database then we check if the phone number and password match
-                                      final String getpasswordTxt= snapshot.child(passwordTXt).child("password").getValue(String.class);
+                                      final String getpassword= snapshot.child(phonenumberTxt).child("password").getValue(String.class);
 
-                                      if(getpasswordTxt.equals(passwordTXt)){
+                                      if(getpassword.equals(passwordTXt)){
                                           Toast.makeText(MainActivity.this,"logged in Successfully",Toast.LENGTH_SHORT).show();
 
                                       }else{
