@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/layout/activity_dashboard.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/drawable/background.xml" value="0.14375" />
+        <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2890625" />
+        <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/layout-v28/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/layout/activity_main.xml" value="0.19882246376811594" />
         <entry key="..\:/Users/james sinyangwe/AndroidStudioProjects/CrimeReportingApp/app/src/main/res/layout/activity_signup.xml" value="0.25" />
       </map>
